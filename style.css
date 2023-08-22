@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family: "gilroy";
+}
+
+.nav{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(10, 33, 109) ;
+}
+
+.nav h2{
+    font-size: 3vw;
+    color: rgb(142, 169, 192);
+}
+
+.container{
+    height: calc(100% - 100px);
+    background-color: rgb(142, 169, 192);
+    padding-top: 7vw;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 15vw;
+}
+
+.game-container{
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
+}
+
+.box{
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-text{
+    font-size: 7vw;
+}
+
+.box:hover{
+    background-color: rgb(177, 185, 190);
+}
+
+.bt-0{
+    border-top: 0;
+}
+
+.bl-0{
+    border-left: 0;
+}
+
+.br-0{
+    border-right: 0;
+}
+
+.bb-0{
+    border-bottom: 0;
+}
+
+.game-info{
+    padding-right: 20vw;
+    width: 50vw;
+}
+
+.turn{
+    font-size: 5vw;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 50vw;
+}
+
+.special{
+    font-size: 8vw;
+    color: rgb(26, 26, 56);
+}
+
+.special:hover{
+    font-size: 8vw;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+#btn{
+    font-size: 3vw;
+    font-family: "gilroy";
+    padding: 12px;
+    border: 5px solid black;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    margin-left: 9vw;
+    margin-top: 6vw;
+    border-radius: 12px;
+}
+
+#btn:hover{
+    background-color: rgb(177, 185, 190);
+    color: black;
+}
+
+@media only screen and (max-width: 600px) {
+    .container{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .game-container{
+        margin-right: 70px;
+    }
+    .turn{
+        width: 100vw;
+        text-align: center;
+    }
+  }
